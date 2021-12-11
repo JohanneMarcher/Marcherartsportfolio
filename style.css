@@ -1,0 +1,182 @@
+:root{
+    --primary-color:#0657E6;
+    --secondary-color: #7101FA;
+    --tertiary-color:#F51F86;
+    --quarternary-color: #32F089;
+    --quinary-color: #D8FA3D;
+    --font-set: 'Righteous', cursive;
+    --second-font-set: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: var(--second-font-set);
+    margin: 0;
+}
+
+/*Her har vi stylet navigationsbaren*/
+.navigation {
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+    padding: 8px;
+}
+
+.nav-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-set);
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.nav-ul a.active{
+    color: var(--quinary-color);
+}
+
+/*Min underline hover effect. Fandt denne tutorial der hjalp mig på vej:
+https://www.youtube.com/watch?v=P2ruqN_IW2E*/
+.nav-ul a::after{
+    content:'';
+    height: 2px;
+    width: 0%;
+    background-color: var(--quarternary-color);
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.nav-ul a:hover::after{
+    content:'';
+    height: 2px;
+    width: 100%;
+    background-color: var(--quarternary-color);
+    display: block;
+}
+
+/*Her er stylingen der laver hamburger menuen.*/
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--quinary-color);
+    font-size: 26px;
+    display: block;
+    padding: 8px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.nav-ul.show {
+    display: flex;
+}
+
+.show {
+    display: block;
+}
+
+/*Min footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+    border: 0px;
+    border-top: 5px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+}
+
+.footerlogo{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.footerh3{
+    color: white;
+    text-align: center;
+    font-family: var(--font-set);
+}
+
+.social{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.footertext{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.heart{
+    color: var(--quinary-color);
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-ul {
+        display: block;
+        flex-direction: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .nav-ul a{
+        margin: 0;
+    }
+
+    .logo {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .nav-ul li {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .nav-ul a{
+        padding: 10px 20px;
+    }
+}
