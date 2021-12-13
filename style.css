@@ -1,9 +1,11 @@
+/*Her er nogle af de standart indstillinger for min hjemmeside
+Her er blandt andet min farvepalette skift type og indstillinger
+for mine forskellige typer tekst (h1, h2 osv..)*/
 :root{
-    --primary-color:#0657E6;
+    --primary-color:#D8FA3D;
     --secondary-color: #7101FA;
     --tertiary-color:#F51F86;
     --quarternary-color: #32F089;
-    --quinary-color: #D8FA3D;
     --font-set: 'Righteous', cursive;
     --second-font-set: Arial, Helvetica, sans-serif;
 }
@@ -11,6 +13,38 @@
 body{
     font-family: var(--second-font-set);
     margin: 0;
+    background-color: black;
+}
+
+/*En fed lille ting jeg fandt her: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2
+Synes det givere en rarere oplevelse når man bruger "jump to section" links*/
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 48px;
+    font-family: var(--font-set);
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+h2{
+    font-size: 32px;
+    font-family: var(--second-font-set);
+    font-style: italic;
+    color: var(--quarternary-color);
+    text-align: center;
+    padding: 0px 10px;
+}
+
+p{
+    font-size: 24px;
+    font-family: var(--second-font-set);
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 /*Her har vi stylet navigationsbaren*/
@@ -53,7 +87,7 @@ body{
 }
 
 .nav-ul a.active{
-    color: var(--quinary-color);
+    color: var(--primary-color);
 }
 
 /*Min underline hover effect. Fandt denne tutorial der hjalp mig på vej:
@@ -80,7 +114,7 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    color: var(--quinary-color);
+    color: var(--primary-color);
     font-size: 26px;
     display: block;
     padding: 8px;
@@ -96,6 +130,55 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
 
 .show {
     display: block;
+}
+
+/*Her starter stylingen til min forside*/
+.banner{
+    width: 100%;
+    display: none;
+}
+
+.mobilbanner{
+    width: 100%;
+    display: block;
+}
+
+.forsidebilleder{
+    width: 100%;
+}
+
+.designknap{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-set);
+    font-size: 32px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    margin: 0px 23%;
+}
+
+.digitalknap{
+    background-color: var(--quarternary-color);
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-set);
+    font-size: 32px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    margin: 0px 15%;
+    margin-bottom: 80px;
+}
+
+.arrowdown{
+    font-size: 32px;
+    color: var(--tertiary-color);
+    display: block;
+    text-align: center;
 }
 
 /*Min footer*/
@@ -141,7 +224,7 @@ footer{
 }
 
 .heart{
-    color: var(--quinary-color);
+    color: var(--primary-color);
     font-size: 30px;
     text-align: center;
     padding: 5px;
@@ -149,7 +232,26 @@ footer{
     margin: 0;
 }
 
+@media screen and (min-width: 600px) {
+    /*Styling til min forside*/
+    .designknap{
+        margin: 0px 30%;
+    }
+    
+    .digitalknap{
+        margin: 0px 24%;
+        margin-bottom: 80px;
+    }
+
+    /*Styling af paragraphs*/
+    p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
 @media screen and (min-width: 750px) {
+    /*Styling af hamburgermenu og navbar*/
     .hamburger {
         display: none;
     }
@@ -173,10 +275,82 @@ footer{
     .nav-ul li {
         display: inline-block;
     }
+
+    /*Styling af paragraphs*/
+    p{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /*Styling til min forside*/
+    .banner{
+        display: block;
+    }
+    
+    .mobilbanner{
+        display: none;
+    }
+
+    .arrowdown{
+        font-size: 42px;
+        position: relative;
+        z-index: 2;
+        margin-top: -12%;
+        margin-bottom: 12%;
+    }
+
+    .forsidebilleder{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 850px) {
+    /*Styling af navbar*/    
     .nav-ul a{
         padding: 10px 20px;
+    }
+
+    /*Styling til min forside*/
+    .designknap{
+        margin: 0px 34%;
+    }
+    
+    .digitalknap{
+        margin: 0px 30%;
+        margin-bottom: 80px;
+    }
+
+    .forsidebilleder{
+        width: 60%;
+    }
+
+    /*Styling af paragraphs*/
+    p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /*Styling til min forside*/
+    .designknap{
+        margin: 0px 39%;
+    }
+    
+    .digitalknap{
+        margin: 0px 37%;
+        margin-bottom: 80px;
+    }
+
+    .forsidebilleder{
+        width: 50%;
+    }
+
+    /*Styling af paragraphs*/
+    p{
+        margin-left: 200px;
+        margin-right: 200px;
     }
 }
