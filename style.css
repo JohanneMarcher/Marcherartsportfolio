@@ -432,6 +432,19 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     margin: 10px 23%;
 }
 
+.kontaktgradient{
+    background-image: linear-gradient(var(--secondary-color), var(--tertiary-color));
+    padding: 15px;
+    padding-bottom: 60px;
+}
+
+/*Styling af min video side*/
+.videoh2{
+    color: var(--tertiary-color);
+    font-family: var(--font-set);
+    font-style: normal;
+}
+
 /*Min footer*/
 footer{
     background-color: black;
@@ -986,6 +999,12 @@ footer{
         margin-top: 130px;   
         width: 90%;
     }
+
+    /*Styling af kontakt side*/
+    .kontakth2{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 }
 
 @media screen and (min-width: 850px) {
@@ -1430,5 +1449,11 @@ footer{
 
     .mallorcaimg{
         margin-top: 60px;
+    }
+
+    /*Styling af kontakt side*/
+    .kontakth2{
+        margin-left: 250px;
+        margin-right: 250px;
     }
 }
