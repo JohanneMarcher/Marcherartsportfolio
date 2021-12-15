@@ -225,6 +225,65 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     font-size: 30px;
 }
 
+/*Stylingen til min projekt side*/
+.projektgrid h2{
+    margin-top: -130px;
+    margin-bottom: 130px;
+}
+
+.dino-section img{
+    width: 100%;
+}
+
+.dino-section h2{
+    margin-top: 80px;
+}
+
+.bonbon-section img{
+    width: 100%;
+}
+
+.bonbon-section h2{
+    margin-top: 80px;
+}
+
+.sko-section img{
+    width: 100%;
+}
+
+.skoimg4{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sko-section h2{
+    margin-top: 80px;
+}
+
+.mural-section img{
+    width: 100%;
+}
+
+.mural-section h2{
+    margin-top: 80px;
+}
+
+.tothetop{
+    color: white;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.418);
+    display: block;
+    position: sticky;
+    z-index: 2;
+    width: 50px;
+    margin-left: 85%;
+    top: 20px;
+}
+
 /*Her starter stylingen til min tegning og digitalkunst side*/
 .tegninggrid img{
     width: 100%;
@@ -322,6 +381,39 @@ footer{
     .tilbageknap{
         padding: 20px;
     }
+
+    /*Stylingen til min projekt side*/
+    .dino-section img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bonbon-section img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sko-section img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skoimg4{
+        width: 70%;
+    }
+
+    .mural-section img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -415,6 +507,39 @@ footer{
     .tilbageknap{
         margin: 0px 20px;
     }
+
+    /*Stylingen til min projekt side*/
+    .dino-section img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bonbon-section img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sko-section img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skoimg4{
+        width: 50%;
+    }
+
+    .mural-section img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 850px) {
@@ -460,6 +585,244 @@ footer{
         margin-bottom: 120px;
     }
 
+    /*Stylingen til min projekt side*/
+    .projektgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 225px 225px;
+        margin: 0px 100px;
+    }
+
+    .projektgrid img{
+        height: 180px;
+    }
+
+    .projektgrid h2{
+        margin-top: -150px;
+        margin-bottom: 150px;
+    }
+
+    .dino-section img{
+        width: 90%;
+    }
+
+    .bonbon-section img{
+        width: 100%;
+    }
+
+    .sko-section img{
+        width: 100%;
+    }
+
+    .mural-section img{
+        width: 100%;
+    }
+
+    .dino-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    .dino-section h2{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-bottom: 50px;
+    }
+
+    .dinotekst{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .dinoimg{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .dino-section p{
+        margin: 20px;
+    }
+
+    .bonbon-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px auto auto auto auto auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    .bonbon-section p{
+        margin: 10px;
+    }
+
+    .bonbon-section h2{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-bottom: 50px;
+    }
+
+    .bonbontekst1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2; 
+    }
+
+    .bonbonimg1{
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        grid-row-start: 2;
+        grid-row-end: 2; 
+    }
+
+    .bonbontekst2{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        grid-row-end: 3; 
+    }
+
+    .bonbontekst3{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 4;
+        grid-row-end: 4; 
+    }
+
+    .bonbontekst4{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+    }
+
+    .bonbonimg2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6; 
+    }
+
+    .bonbonimg3{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 6; 
+        margin-top: 20px;
+    }
+
+    .bonbonimg4{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 6; 
+    }
+
+    .sko-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto auto auto auto auto auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    .sko-section p{
+        margin: 15px 20px;
+    }
+
+    .sko-section h2{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-bottom: 50px;
+    }
+
+    .skotekst1{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;   
+    }
+
+    .skotekst2{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 4;
+        grid-row-end: 4;   
+    }
+
+    .skotekst3{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 5;
+        grid-row-end: 5;   
+    }
+
+    .skotekst4{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 7;
+        grid-row-end: 7;   
+    }
+
+    .skoimg4{
+        width: 30%;
+    }
+
+    .mural-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    .mural-section p{
+        margin: 20px;
+    }
+
+    .mural-section h2{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-bottom: 50px;
+    }
+
+    .muraltekst1{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+        grid-row-end: 2;       
+    }
+
+    .muraltekst2{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 3;
+        grid-row-end: 3;        
+    }
+
+    .tothetop{
+        margin-left: 80%;
+    }
+
     /*Her starter stylingen til min tegning og digitalkunst side*/
     .tegninggrid{
         margin: 0px 150px;
@@ -498,5 +861,30 @@ footer{
 
     .tilbageknap{
         margin: 0px 100px;
+    }
+
+    /*Stylingen til min projekt side*/    
+    .dino-section{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .bonbon-section{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .sko-section{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .sko-section p{
+        margin: 15px 50px;
+    }
+
+    .mural-section{
+        margin-left: 150px;
+        margin-right: 150px;        
     }
 }
