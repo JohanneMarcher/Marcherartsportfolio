@@ -385,6 +385,53 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     margin: 0 auto;
 }
 
+/*Styling af min lidt-om-mig siden*/
+.meimg{
+    width: 100%;
+    position: relative;
+    z-index: -2;
+    height: 500px;
+    object-fit: cover;
+}
+
+.meh1{
+    color: black;
+    margin-top: -500px;
+    margin-bottom: 380px;
+}
+
+.ommig-ul{
+    color: white;
+    font-size: 24px;
+    margin: 5px 20%;
+}
+
+.mallorcaimg{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.migarrow{
+    font-size: 48px;
+    color: var(--secondary-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.lidtommigknap{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-set);
+    font-size: 32px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    margin: 10px 23%;
+}
+
 /*Min footer*/
 footer{
     background-color: black;
@@ -435,6 +482,7 @@ footer{
     padding-bottom: 15px;
     margin: 0;
 }
+
 @media screen and (min-width: 500px) {
     /*Her starter stylingen til min design side*/
     .design-gradient{
@@ -443,6 +491,17 @@ footer{
 
     .tothetop{
         margin-left: 80%;
+    }
+
+/*Styling af min lidt-om-mig side*/
+    .meimg{
+        width: 80%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .ommig-ul{
+        margin: 5px 25%;
     }
 }
 
@@ -559,6 +618,22 @@ footer{
 
     .groenimg{
         width: 70%;
+    }
+
+/*Styling af min lidt-om-mig side*/
+    .meimg{
+        width: 65%;
+    }
+
+    .ommig-ul{
+        margin: 5px 29%;
+    }
+
+    .mallorcaimg{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 
@@ -823,6 +898,93 @@ footer{
 
     .malerimg{
         width: 30%;
+    }
+
+    /*Styling af lidt-om-mig siden*/
+    .ommiggrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 110px auto auto auto auto auto auto auto auto;
+        margin: 0px 30px;
+    }
+
+    .meh1{
+        color: white;
+        margin-top: 20px;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1; 
+    }
+
+    .meimg{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: span 4; 
+        width: 90%;
+        height: 100%;
+    }
+
+    .migarrow{
+        display: none;
+    }
+
+    .migtekst1{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;   
+        margin: 5px;      
+    }
+
+    .migtekst2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;  
+        margin: 5px;        
+    }
+
+    .ommig-ul{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        margin: 5px;        
+    }
+
+    .migtekst3{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 6;  
+        margin: 5px;        
+    }
+
+    .migtekst4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 7;  
+        margin: 5px;        
+    }
+
+    .migtekst5{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 8;  
+        margin: 5px;        
+    }
+
+    .mallorcaimg{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: span 9;  
+        margin-top: 130px;   
+        width: 90%;
     }
 }
 
@@ -1162,6 +1324,11 @@ footer{
     .groen-section{
         margin: 0px 140px;
     }
+
+    /*Styling af lidt-om-mig siden*/
+    .ommiggrid{
+        margin: 0px 70px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -1254,5 +1421,14 @@ footer{
 
     .groen-section{
         margin: 0px 200px;
+    }
+
+    /*Styling af lidt-om-mig siden*/
+    .ommiggrid{
+        margin: 0px 120px;
+    }
+
+    .mallorcaimg{
+        margin-top: 60px;
     }
 }
