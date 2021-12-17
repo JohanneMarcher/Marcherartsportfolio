@@ -61,7 +61,7 @@ p{
 }
 
 .logo {
-    width: 100px;
+    width: 130px;
     display: block;
     padding: 8px;
 }
@@ -117,7 +117,7 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     border: 0;
     cursor: pointer;
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 34px;
     display: block;
     padding: 8px;
 }
@@ -274,12 +274,13 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     text-decoration: none;
     background-color: var(--secondary-color);
     padding: 8px;
+    font-size: 24px;
     border-radius: 20px;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.418);
     display: block;
     position: sticky;
     z-index: 2;
-    width: 50px;
+    width: 70px;
     margin-left: 75%;
     margin-top: 10px;
     top: 20px;
@@ -294,7 +295,8 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
 .tilbageknap{
     text-decoration: none;
     color: var(--primary-color);
-    padding: 10px;
+    padding: 15px;
+    font-size: 20px;
 }
 /*Her starter stylingen til min design side*/
 .design-gradient{
@@ -432,10 +434,17 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     margin: 10px 23%;
 }
 
+/*Styling af min kontakt side*/
 .kontaktgradient{
     background-image: linear-gradient(var(--secondary-color), var(--tertiary-color));
     padding: 15px;
     padding-bottom: 60px;
+}
+
+.kontaktgif{
+    width: 250px;
+    display: block;
+    margin: 10px auto;
 }
 
 /*Styling af min video side*/
@@ -463,6 +472,12 @@ https://www.youtube.com/watch?v=P2ruqN_IW2E*/
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.filmgif{
+    width: 200px;
+    display: block;
+    margin: 10px auto;
 }
 
 /*Min footer*/
@@ -1031,6 +1046,10 @@ footer{
         margin-right: 80px;
     }
 
+    .kontaktgradient{
+        margin: 0 70px;
+    }
+
     /*Styling af min video side*/
     .hugvideo{
         width: 560px; 
@@ -1389,6 +1408,11 @@ footer{
         margin: 0px 70px;
     }
 
+    /*Styling af min kontakt side*/
+    .kontaktgradient{
+        margin: 0 120px;
+    }
+
     /*Styling af min video side*/
     .pineapple{
         width: 26%;
@@ -1513,6 +1537,11 @@ footer{
     .kontakth2{
         margin-left: 250px;
         margin-right: 250px;
+    }
+
+    .kontaktgradient{
+        margin: 0 200px;
+        padding: 20px 0px;
     }
 
     /*Styling af min video side*/
